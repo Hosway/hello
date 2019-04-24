@@ -9,13 +9,28 @@ import Counter from './components/Counter'
 import FunctionClick from './components/functionClick'
 import ClassClick from './components/ClassClick'
 import EventBind from './components/EventBind'
+import ParentComponent from './components/ParentComponent'
+import UserGreeting from './components/UserGreeting'
+import NameList from './components/NameList'
+import Stylesheet from './components/Stylesheet'
+import Inline from './components/Inline'
+import './appStyles.css'
+import styles from './appStyles.module.css'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <h1 className='error'>error</h1>
+        <h1 className={styles.success}>success</h1>
+        {/*<Inline />
+        <Stylesheet primary={true} />
+        <ParentComponent />
+        <NameList />
+        <UserGreeting />
+        <ParentComponent />
         <EventBind />
-        {/*<FunctionClick />
+        <FunctionClick />
         <ClassClick />
         <Counter />
         <Message />
